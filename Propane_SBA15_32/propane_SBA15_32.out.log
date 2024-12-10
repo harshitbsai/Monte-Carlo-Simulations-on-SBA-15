@@ -1,0 +1,1236 @@
+********************************************************************************
+                ______                                __                        
+               / ____/___ _______________ _____  ____/ /________ _              
+              / /   / __ `/ ___/ ___/ __ `/ __ \/ __  / ___/ __ `/              
+             / /___/ /_/ (__  |__  ) /_/ / / / / /_/ / /  / /_/ /               
+             \____/\__,_/____/____/\__,_/_/ /_/\__,_/_/   \__,_/                
+                                                                                
+********************************************************************************
+**********************************Log File**************************************
+********************************************************************************
+
+For any published work that uses Cassandra, cite the following reference:
+    Shah JK, Marin‐Rimoldi E, Mullen RG, Keene BP, Khan S,
+    Paluch AS, Rai N, Romanielo LL, Rosch TW, Yoo B, Maginn EJ.
+    Cassandra: An open source Monte Carlo package for molecular simulation.
+    Journal of Computational Chemistry. 2017, 38, 1727–1739.
+    http://dx.doi.org/10.1002/jcc.24807
+
+Run info
+********************************************************************************
+version: Cassandra Version 1.3.0
+inputfile: pore.inp
+name of run: propane_SBA15_32.out
+date (mm/dd/yyyy): 09/15/2024
+time: 21:51:12
+machine: mba30-002.cluster
+********************************************************************************
+
+Verbose log
+********************************************************************************
+Normal output to logfile
+********************************************************************************
+
+Simulation type
+********************************************************************************
+GCMC                
+********************************************************************************
+
+Copy input file
+********************************************************************************
+# Run_Name                                                                      
+propane_SBA15_32.out                                                            
+                                                                                
+# Sim_Type                                                                      
+gcmc                                                                            
+                                                                                
+# Nbr_Species                                                                   
+2                                                                               
+                                                                                
+# VDW_Style                                                                     
+lj cut_tail 12.0                                                                
+                                                                                
+# Seed_Info                                                                     
+867223177 690098643                                                             
+                                                                                
+# Rcutoff_Low                                                                   
+0.5                                                                             
+                                                                                
+# Pair_Energy                                                                   
+true                                                                            
+                                                                                
+                                                                                
+# Molecule_Files                                                                
+propane.mcf 4000                                                                
+t.mcf 1                                                                         
+                                                                                
+# Box_Info                                                                      
+1                                                                               
+orthogonal                                                                      
+101.20 96.47 101.34                                                             
+                                                                                
+# Temperature_Info                                                              
+273.46                                                                          
+                                                                                
+# Chemical_Potential_Info                                                       
+-32.0                                                                           
+                                                                                
+# Move_Probability_Info                                                         
+                                                                                
+# Prob_Translation                                                              
+0.2                                                                             
+2.0  0.0                                                                        
+                                                                                
+# Prob_Rotation                                                                 
+0.2                                                                             
+180.0  0.0                                                                      
+                                                                                
+# Prob_Regrowth                                                                 
+0.2                                                                             
+1.0  0.0                                                                        
+                                                                                
+# Prob_Insertion                                                                
+0.2                                                                             
+cbmc none                                                                       
+                                                                                
+# Prob_Deletion                                                                 
+0.2                                                                             
+                                                                                
+# Done_Probability_Info                                                         
+                                                                                
+# Start_Type                                                                    
+add_to_config 0 1 t.xyz 10 0                                                    
+                                                                                
+# Run_Type                                                                      
+equilibration 1000 50                                                           
+                                                                                
+# Simulation_Length_Info                                                        
+units        steps                                                              
+prop_freq    400                                                                
+coord_freq   40000                                                              
+run          2000000                                                            
+                                                                                
+# Property_Info 1                                                               
+energy_total                                                                    
+nmols                                                                           
+pressure                                                                        
+density                                                                         
+volume                                                                          
+                                                                                
+# Fragment_Files                                                                
+species1/frag1/frag1.dat  1                                                     
+                                                                                
+# CBMC_Info                                                                     
+kappa_ins 12                                                                    
+rcut_cbmc 6.5                                                                   
+kappa_rot 0                                                                     
+kappa_dih 12                                                                    
+                                                                                
+END                                                                             
+********************************************************************************
+
+Number of species
+********************************************************************************
+2
+********************************************************************************
+
+Box info
+********************************************************************************
+Number of simulation boxes     1
+Box 1 is ORTHORHOMBIC        
+ X dimension :       101.2000     Angstrom
+ Y dimension :        96.4700     Angstrom
+ Z dimension :       101.3400     Angstrom
+ Cell basis vector lengths in A,    101.2000      96.4700     101.3400
+ Cosine of angles alpha, beta, gamma     0.0000       0.0000       0.0000
+ Distance between box faces   101.2000      96.4700     101.3400
+ Box volume, A^3        989358.5038
+********************************************************************************
+
+Pair style
+********************************************************************************
+VDW style used is:   LJ             in box:  1
+ VDW sum style is:   cut_tail       in box:  1
+ rcut =    12.000 Angstrom
+Section "# Charge_Style" is missing from the input file
+ By default, charge style for box 1 is NONE
+Pair interaction energy array storage enabled
+Section "# Mixing_Rule" is missing from the input file
+ By default, using Lorentz-Berthelot
+********************************************************************************
+
+Molecule info
+********************************************************************************
+ Reading molecular connectivity information
+ Species:            1
+ Molecular connectivity file: propane.mcf                                                                                                             
+   3 atom(s) specified.
+   2 bond(s) specified.
+   1 angle(s) specified.
+   0 dihedral(s) specified.
+   0 improper(s) specified.
+   1 fragment(s) specified.
+   0 fragment bond(s) specified.
+ Reading molecular connectivity information
+ Species:            2
+ Molecular connectivity file: t.mcf                                                                                                                   
+   34581 atom(s) specified.
+   0 bond(s) specified.
+   0 angle(s) specified.
+   0 dihedral(s) specified.
+   0 improper(s) specified.
+   0 fragment(s) specified.
+   0 fragment bond(s) specified.
+
+ Species  Max molecules
+ -------  -------------
+      1           4000
+      2              1
+
+ Species     1
+ -------------------------------------------------------------------------------
+ Atom parameters read
+ Bond parameters read
+ Angle parameters read
+ Dihedral parameters read
+ Improper parameters read
+ Intra molecule scaling factors for species            1
+  VDW 1-2 scaling factor       0.000
+  VDW 1-3 scaling factor       0.000
+  VDW 1-4 scaling factor       0.000
+  VDW 1-N scaling factor       1.000
+ Total number of atoms in fragment     1  is   3
+ Fragment info read
+ Fragment file for fragment 1 is species1/frag1/frag1.dat
+ -------------------------------------------------------------------------------
+
+ Species     2
+ -------------------------------------------------------------------------------
+ Atom parameters read
+ Bond parameters read
+ Angle parameters read
+ Dihedral parameters read
+ Improper parameters read
+ Intra molecule scaling factors for species            2
+  VDW 1-2 scaling factor       0.000
+  VDW 1-3 scaling factor       0.000
+  VDW 1-4 scaling factor       0.000
+  VDW 1-N scaling factor       1.000
+ -------------------------------------------------------------------------------
+
+ Fragment coord info
+ -------------------------------------------------------------------------------
+ library_coords array successfully allocated
+ Finished loading fragment coordinates from
+ species1/frag1/frag1.dat
+ -------------------------------------------------------------------------------
+********************************************************************************
+
+Temperature
+********************************************************************************
+Temperature of box 1 is 273.460 K
+********************************************************************************
+
+Minimum distance cutoff
+********************************************************************************
+MC low cutoff distance is   0.500    Angstrom
+********************************************************************************
+
+Start type
+********************************************************************************
+Initial configuration for box 1 will add molecules to configuration read from file
+ Will read       0  molecules of species   1
+ Will read       1  molecules of species   2
+ Will read configuration from file t.xyz
+ Will insert      10  molecules of species   1
+ Will insert       0  molecules of species   2
+********************************************************************************
+
+Seed info
+********************************************************************************
+The starting seeds are:           867223177           690098643
+********************************************************************************
+
+Move probabilities
+********************************************************************************
+Probability for translation                0.200000
+ Maximum displacement width for species  1 in box  1  is      2.00000
+ Maximum displacement width for species  2 in box  1  is      0.00000
+Probability for rotation                   0.200000
+ The rotational width for the species    1 in box  1   is      3.1416 radians
+ The rotational width for the species    2 in box  1   is      0.0000 radians
+Probability for regrowth                   0.200000
+ Cumulative probability for regrowth of species     1  is   1.000000
+ Cumulative probability for regrowth of species     2  is   1.000000
+Probability for insertion                  0.200000
+ Species 1 will be inserted using CBMC
+ Species 2 will not be inserted
+ Number of insertable species is    1
+Probability for deletion                   0.200000
+Number of moves is :   5
+********************************************************************************
+
+Chemical potential
+********************************************************************************
+Species     1
+ Chemical potential (internal units):    -3200.000000000
+ de Broglie wavelength (Angstroms):          0.158985706
+Species     2
+ No entry in input file. Chemical potential not required.
+********************************************************************************
+
+Simulation length info
+********************************************************************************
+Thermodynamic quantities will be computed every                  400 Steps     
+Coordinates will be written to file every                      40000 Steps     
+ movie header file is                  propane_SBA15_32.out.H
+ movie_XYZ file is                     propane_SBA15_32.out.xyz
+The simulation will be run for                             2000000 Steps     
+Instantaneous values will be written every                       400 Steps     
+********************************************************************************
+
+Property info
+********************************************************************************
+Total number of property files to be written is     1   for box 1
+ Maximum number of properties per file is    7
+ Writing the name of the property files and the corresponding property output
+ Property file    1   is  propane_SBA15_32.out.prp
+ Properties output in these files are
+ Energy_Total
+ Nmols_1
+ Nmols_2
+ Pressure
+ Density_1
+ Density_2
+ Volume
+********************************************************************************
+
+CBMC info
+********************************************************************************
+Kappa for first fragment insertion          12
+ Cutoff for CBMC for box 1 is         6.50
+ Orientational bias not supported. Kappa set to zero
+Kappa for dihedral selection                12
+********************************************************************************
+
+Run type
+********************************************************************************
+ The input run type is equilibration
+ Update frequency is         1000
+********************************************************************************
+
+********************************************************************************
+************************ Begin Cassandra simulation ****************************
+********************************************************************************
+
+Initial configuration
+********************************************************************************
+ Reading configuration for box           1
+ Reading            0  molecules of species            1
+ Reading            1  molecules of species            2
+ Configurations read successfully
+ Inserting           10 molecules of species            1
+********************************************************************************
+
+Compute total energy
+********************************************************************************
+
+ Energy components for box 1     kJ/mol-Extensive
+ ---------------------------------------------------------------------
+ Total system energy                 21670308.092
+ Intra molecular energy              21672150.067
+   Bond energy                              0.000
+   Bond angle energy                       11.042
+   Dihedral angle energy                    0.000
+   Improper angle energy                    0.000
+   Intra molecule vdw                21672139.025
+   Intra molecule q                         0.000
+ Inter molecular energy                 -1841.975
+   Inter molecule vdw                     -39.840
+   Long range correction                -1802.136
+   Inter molecule q                         0.000
+ ---------------------------------------------------------------------
+
+********************************************************************************
+
+Run simulation
+********************************************************************************
+                Step       Move   Mol Spc Box  Success  MaxWidth
+                4929  translate         1   1  0.50200   2.00800
+                5034     rotate         1   1  0.76000   3.14159
+               10018  translate         1   1  0.37800   1.51805
+               10029     rotate         1   1  0.66900   3.14159
+               14925  translate         1   1  0.37800   1.14764
+               15117     rotate         1   1  0.61500   3.14159
+               19820     rotate         1   1  0.60600   3.14159
+               19894  translate         1   1  0.42500   0.97550
+               24883     rotate         1   1  0.54600   3.14159
+               25014  translate         1   1  0.47000   0.91697
+               29953  translate         1   1  0.48900   0.89679
+               30008     rotate         1   1  0.53800   3.14159
+               34826  translate         1   1  0.43700   0.78380
+               35226     rotate         1   1  0.56200   3.14159
+               39770  translate         1   1  0.46300   0.72580
+               40370     rotate         1   1  0.53600   3.14159
+               44637  translate         1   1  0.47200   0.68515
+               45520     rotate         1   1  0.54700   3.14159
+               49623  translate         1   1  0.49000   0.67145
+               50268     rotate         1   1  0.51100   3.14159
+               54596  translate         1   1  0.52000   0.69831
+               55375     rotate         1   1  0.51600   3.14159
+               59492  translate         1   1  0.50000   0.69831
+               60387     rotate         1   1  0.48400   2.98451
+               64341  translate         1   1  0.46800   0.65362
+               65542     rotate         1   1  0.49300   2.83529
+               69248  translate         1   1  0.48300   0.63139
+               70555     rotate         1   1  0.44900   2.69352
+               74284  translate         1   1  0.52700   0.66549
+               75443     rotate         1   1  0.46600   2.55885
+               79259  translate         1   1  0.51300   0.68279
+               80585     rotate         1   1  0.46100   2.43090
+               84316  translate         1   1  0.46800   0.63909
+               85523     rotate         1   1  0.50100   2.55245
+               89198  translate         1   1  0.49300   0.63014
+               90588     rotate         1   1  0.47800   2.42483
+               94290  translate         1   1  0.50300   0.63393
+               95584     rotate         1   1  0.47200   2.30359
+               99344  translate         1   1  0.46700   0.59209
+              100460     rotate         1   1  0.43000   2.18841
+              104334  translate         1   1  0.51700   0.61222
+              105248     rotate         1   1  0.45600   2.07899
+              109475  translate         1   1  0.46300   0.56691
+              110065     rotate         1   1  0.46100   1.97504
+              114367  translate         1   1  0.50300   0.57032
+              115112     rotate         1   1  0.43300   1.87629
+              119241  translate         1   1  0.47600   0.54294
+              120028     rotate         1   1  0.47600   1.78247
+              124187  translate         1   1  0.50800   0.55163
+              125009     rotate         1   1  0.50000   1.87159
+              129513  translate         1   1  0.50200   0.55383
+              129908     rotate         1   1  0.48500   1.77801
+              134597     rotate         1   1  0.43500   1.68911
+              134631  translate         1   1  0.47900   0.53057
+              139529  translate         1   1  0.52900   0.56135
+              139772     rotate         1   1  0.48000   1.60466
+              144486  translate         1   1  0.50000   0.56135
+              144860     rotate         1   1  0.47900   1.52443
+              149378  translate         1   1  0.49600   0.55685
+              149905     rotate         1   1  0.50900   1.60065
+              154471  translate         1   1  0.49600   0.55240
+              154870     rotate         1   1  0.47600   1.52061
+              159660  translate         1   1  0.49500   0.54688
+              159827     rotate         1   1  0.51900   1.59664
+              164630  translate         1   1  0.47500   0.51953
+              164914     rotate         1   1  0.49700   1.51681
+              169703  translate         1   1  0.49100   0.51018
+              169870     rotate         1   1  0.49900   1.44097
+              174811  translate         1   1  0.49700   0.50712
+              175179     rotate         1   1  0.49900   1.36892
+              179573  translate         1   1  0.49800   0.50509
+              180303     rotate         1   1  0.53200   1.43737
+              184692  translate         1   1  0.50300   0.50812
+              184895     rotate         1   1  0.51200   1.50924
+              189823  translate         1   1  0.51700   0.52540
+              189857     rotate         1   1  0.50000   1.58470
+              194757  translate         1   1  0.50400   0.52960
+              194887     rotate         1   1  0.49200   1.50547
+              199730  translate         1   1  0.47600   0.50418
+              199974     rotate         1   1  0.47300   1.43019
+              204829  translate         1   1  0.51700   0.52132
+              204977     rotate         1   1  0.48300   1.35868
+              209522  translate         1   1  0.51700   0.53905
+              209751     rotate         1   1  0.52600   1.42662
+              214423  translate         1   1  0.49000   0.52827
+              214602     rotate         1   1  0.49100   1.35529
+              219338  translate         1   1  0.49200   0.51981
+              219392     rotate         1   1  0.53800   1.42305
+              224430  translate         1   1  0.48200   0.50110
+              224568     rotate         1   1  0.50400   1.49420
+              229399  translate         1   1  0.49200   0.49308
+              229640     rotate         1   1  0.47800   1.41949
+              234512  translate         1   1  0.51700   0.50985
+              234710     rotate         1   1  0.50400   1.49047
+              239329  translate         1   1  0.48700   0.49659
+              239800     rotate         1   1  0.47100   1.41594
+              244396  translate         1   1  0.47900   0.47574
+              244906     rotate         1   1  0.46000   1.34515
+              249318  translate         1   1  0.51300   0.48810
+              249860     rotate         1   1  0.48900   1.27789
+              254198  translate         1   1  0.53500   0.52227
+              254944     rotate         1   1  0.49700   1.21399
+              259218  translate         1   1  0.47300   0.49407
+              260153     rotate         1   1  0.51700   1.27469
+              264047  translate         1   1  0.47700   0.47134
+              265432     rotate         1   1  0.50200   1.33843
+              269073  translate         1   1  0.53200   0.50151
+              270535     rotate         1   1  0.50200   1.40535
+              274279  translate         1   1  0.50800   0.50953
+              275685     rotate         1   1  0.45400   1.33508
+              279248  translate         1   1  0.46400   0.47285
+              280838     rotate         1   1  0.48500   1.26833
+              284163  translate         1   1  0.47400   0.44826
+              285942     rotate         1   1  0.52000   1.33175
+              288656  translate         1   1  0.50400   0.45184
+              290957     rotate         1   1  0.51200   1.39833
+              293615  translate         1   1  0.52600   0.47534
+              296329     rotate         1   1  0.49100   1.32842
+              298737  translate         1   1  0.49300   0.46868
+              301007     rotate         1   1  0.50300   1.39484
+              303714  translate         1   1  0.50100   0.46962
+              305950     rotate         1   1  0.47300   1.32509
+              308827  translate         1   1  0.50400   0.47338
+              310929     rotate         1   1  0.48900   1.25884
+              313890  translate         1   1  0.49600   0.46959
+              316165     rotate         1   1  0.51500   1.32178
+              318940  translate         1   1  0.51000   0.47898
+              321439     rotate         1   1  0.49800   1.25569
+              324044  translate         1   1  0.49200   0.47132
+              326362     rotate         1   1  0.46900   1.19291
+              329090  translate         1   1  0.48300   0.45530
+              331319     rotate         1   1  0.52500   1.25255
+              334152  translate         1   1  0.53300   0.48534
+              336135     rotate         1   1  0.48000   1.18993
+              339274  translate         1   1  0.49200   0.47758
+              341050     rotate         1   1  0.53800   1.24942
+              344377  translate         1   1  0.50800   0.48522
+              345942     rotate         1   1  0.47800   1.18695
+              349467  translate         1   1  0.47300   0.45902
+              350858     rotate         1   1  0.52900   1.24630
+              354573  translate         1   1  0.52700   0.48381
+              355688     rotate         1   1  0.50700   1.30861
+              359416  translate         1   1  0.50600   0.48961
+              360688     rotate         1   1  0.49200   1.24318
+              364701  translate         1   1  0.47500   0.46513
+              365684     rotate         1   1  0.49100   1.18102
+              369691  translate         1   1  0.47800   0.44466
+              370693     rotate         1   1  0.53500   1.24008
+              374625  translate         1   1  0.49800   0.44289
+              375646     rotate         1   1  0.49100   1.17807
+              379502  translate         1   1  0.48000   0.42517
+              380570     rotate         1   1  0.53000   1.23697
+              384657  translate         1   1  0.55200   0.46939
+              385543     rotate         1   1  0.50800   1.29882
+              389805  translate         1   1  0.51300   0.48159
+              390434     rotate         1   1  0.48900   1.23388
+              395015  translate         1   1  0.50600   0.48737
+              395596     rotate         1   1  0.49200   1.17219
+              400195  translate         1   1  0.48200   0.46983
+              400687     rotate         1   1  0.50000   1.23080
+              405320  translate         1   1  0.48300   0.45385
+              405747     rotate         1   1  0.49800   1.16926
+              410180  translate         1   1  0.49700   0.45113
+              410727     rotate         1   1  0.51000   1.22772
+              415053  translate         1   1  0.50900   0.45925
+              415914     rotate         1   1  0.47700   1.16633
+              420069  translate         1   1  0.49900   0.45833
+              420759     rotate         1   1  0.49800   1.10802
+              425131  translate         1   1  0.47200   0.43266
+              426006     rotate         1   1  0.51500   1.16342
+              429989  translate         1   1  0.51200   0.44305
+              431165     rotate         1   1  0.49500   1.10525
+              435075  translate         1   1  0.51200   0.45368
+              436131     rotate         1   1  0.53600   1.16051
+              439688  translate         1   1  0.48800   0.44279
+              441323     rotate         1   1  0.53100   1.21854
+              444769  translate         1   1  0.51500   0.45608
+              446514     rotate         1   1  0.51800   1.27946
+              449588  translate         1   1  0.50600   0.46155
+              451461     rotate         1   1  0.48900   1.21549
+              454616  translate         1   1  0.50400   0.46524
+              456349     rotate         1   1  0.49900   1.15471
+              459783  translate         1   1  0.48000   0.44663
+              461267     rotate         1   1  0.53100   1.21245
+              464776  translate         1   1  0.52100   0.46539
+              466192     rotate         1   1  0.48200   1.15183
+              469602  translate         1   1  0.48300   0.44957
+              471265     rotate         1   1  0.50100   1.20942
+              474680  translate         1   1  0.47400   0.42619
+              475973     rotate         1   1  0.49600   1.14895
+              479837  translate         1   1  0.49600   0.42278
+              480810     rotate         1   1  0.51600   1.20640
+              484862  translate         1   1  0.54900   0.46421
+              485645     rotate         1   1  0.49600   1.14608
+              489792  translate         1   1  0.48900   0.45400
+              490758     rotate         1   1  0.50100   1.20338
+              494985  translate         1   1  0.51700   0.46944
+              495725     rotate         1   1  0.50500   1.26355
+              500116  translate         1   1  0.49700   0.46662
+              500862     rotate         1   1  0.48500   1.20037
+              504963  translate         1   1  0.48700   0.45449
+              505914     rotate         1   1  0.50700   1.26039
+              509971  translate         1   1  0.49700   0.45176
+              511155     rotate         1   1  0.47600   1.19737
+              515349  translate         1   1  0.48200   0.43550
+              516129     rotate         1   1  0.48500   1.13750
+              520159  translate         1   1  0.51700   0.45030
+              521158     rotate         1   1  0.50300   1.19438
+              525041  translate         1   1  0.49300   0.44400
+              526065     rotate         1   1  0.46900   1.13466
+              529849  translate         1   1  0.50900   0.45199
+              531059     rotate         1   1  0.51200   1.19139
+              534752  translate         1   1  0.48600   0.43934
+              535857     rotate         1   1  0.49700   1.13182
+              539712  translate         1   1  0.51700   0.45427
+              541135     rotate         1   1  0.51600   1.18841
+              544528  translate         1   1  0.46900   0.42611
+              546223     rotate         1   1  0.50000   1.24783
+              549530  translate         1   1  0.53300   0.45423
+              551081     rotate         1   1  0.46500   1.18544
+              554632  translate         1   1  0.50100   0.45514
+              556085     rotate         1   1  0.49800   1.12617
+              559587  translate         1   1  0.46300   0.42146
+              561198     rotate         1   1  0.47900   1.06986
+              564912  translate         1   1  0.52600   0.44338
+              565917     rotate         1   1  0.52200   1.12335
+              569947  translate         1   1  0.49600   0.43983
+              570632     rotate         1   1  0.48100   1.06719
+              575102  translate         1   1  0.51600   0.45390
+              575834     rotate         1   1  0.50700   1.12055
+              580180  translate         1   1  0.48100   0.43666
+              580634     rotate         1   1  0.52000   1.17657
+              585129  translate         1   1  0.52900   0.46198
+              585538     rotate         1   1  0.50200   1.23540
+              589851  translate         1   1  0.46600   0.43057
+              590671     rotate         1   1  0.47500   1.17363
+              594809  translate         1   1  0.49600   0.42712
+              595496     rotate         1   1  0.53100   1.23231
+              599985  translate         1   1  0.52300   0.44677
+              600403     rotate         1   1  0.49600   1.17070
+              604929  translate         1   1  0.46500   0.41550
+              605382     rotate         1   1  0.48300   1.11216
+              609725  translate         1   1  0.52300   0.43461
+              610169     rotate         1   1  0.50000   1.16777
+              614848  translate         1   1  0.50700   0.44069
+              615226     rotate         1   1  0.49500   1.10938
+              619992     rotate         1   1  0.48400   1.05391
+              620161  translate         1   1  0.50500   0.44510
+              624956     rotate         1   1  0.52200   1.10661
+              625454  translate         1   1  0.49900   0.44421
+              630168     rotate         1   1  0.49500   1.05128
+              630399  translate         1   1  0.48500   0.43088
+              635308  translate         1   1  0.46100   0.39727
+              635452     rotate         1   1  0.52100   1.10384
+              640203  translate         1   1  0.53900   0.42826
+              640525     rotate         1   1  0.52500   1.15903
+              645140  translate         1   1  0.51000   0.43683
+              645429     rotate         1   1  0.47000   1.10108
+              649922  translate         1   1  0.50700   0.44294
+              650427     rotate         1   1  0.52000   1.15614
+              654938  translate         1   1  0.49100   0.43497
+              655332     rotate         1   1  0.48800   1.09833
+              659831  translate         1   1  0.46900   0.40800
+              660202     rotate         1   1  0.50200   1.15325
+              664789  translate         1   1  0.54200   0.44227
+              665178     rotate         1   1  0.49600   1.09558
+              670004  translate         1   1  0.47000   0.41574
+              670248     rotate         1   1  0.49700   1.04081
+              675024  translate         1   1  0.48700   0.40493
+              675231     rotate         1   1  0.50300   1.09285
+              680075  translate         1   1  0.51500   0.41708
+              680255     rotate         1   1  0.49200   1.03820
+              685247  translate         1   1  0.52100   0.43459
+              685649     rotate         1   1  0.50600   1.09011
+              690168  translate         1   1  0.48400   0.42069
+              690562     rotate         1   1  0.51800   1.14462
+              695145  translate         1   1  0.48700   0.40975
+              695718     rotate         1   1  0.45300   1.08739
+              700438  translate         1   1  0.51700   0.42368
+              700669     rotate         1   1  0.51600   1.14176
+              705581     rotate         1   1  0.49300   1.08467
+              705646  translate         1   1  0.51900   0.43978
+              710476     rotate         1   1  0.50400   1.13890
+              710720  translate         1   1  0.48000   0.42219
+              715573     rotate         1   1  0.51900   1.19585
+              715896  translate         1   1  0.50400   0.42557
+              720768  translate         1   1  0.51300   0.43663
+              720882     rotate         1   1  0.49400   1.13606
+              725789     rotate         1   1  0.48300   1.07925
+              725841  translate         1   1  0.50600   0.44187
+              730794     rotate         1   1  0.50100   1.13322
+              730820  translate         1   1  0.50000   0.44187
+              735627     rotate         1   1  0.47600   1.07655
+              735909  translate         1   1  0.50200   0.44364
+              740545     rotate         1   1  0.51500   1.13038
+              740645  translate         1   1  0.48100   0.42678
+              745642     rotate         1   1  0.49800   1.07386
+              745803  translate         1   1  0.50000   0.42678
+              750480  translate         1   1  0.49400   0.42166
+              750610     rotate         1   1  0.52200   1.12756
+              755424  translate         1   1  0.49600   0.41828
+              755711     rotate         1   1  0.52200   1.18393
+              760458  translate         1   1  0.49700   0.41578
+              760570     rotate         1   1  0.49100   1.12474
+              765301  translate         1   1  0.48900   0.40663
+              765655     rotate         1   1  0.50500   1.18097
+              770220  translate         1   1  0.50300   0.40907
+              770804     rotate         1   1  0.49500   1.12193
+              775105  translate         1   1  0.49800   0.40743
+              775940     rotate         1   1  0.48900   1.06583
+              780098  translate         1   1  0.49300   0.40173
+              781098     rotate         1   1  0.53100   1.11912
+              785080  translate         1   1  0.52100   0.41860
+              785953     rotate         1   1  0.50100   1.17508
+              789977  translate         1   1  0.48700   0.40772
+              790905     rotate         1   1  0.51100   1.23383
+              795128  translate         1   1  0.52400   0.42729
+              795791     rotate         1   1  0.43600   1.17214
+              800246  translate         1   1  0.48300   0.41276
+              800621     rotate         1   1  0.49300   1.11353
+              805181  translate         1   1  0.50200   0.41441
+              805650     rotate         1   1  0.46700   1.05786
+              810226  translate         1   1  0.49000   0.40612
+              810604     rotate         1   1  0.50800   1.11075
+              815402     rotate         1   1  0.49000   1.05521
+              815470  translate         1   1  0.50700   0.41181
+              820213     rotate         1   1  0.49200   1.00245
+              820649  translate         1   1  0.49400   0.40687
+              824962     rotate         1   1  0.55100   1.05257
+              825607  translate         1   1  0.51200   0.41663
+              830212     rotate         1   1  0.51700   1.10520
+              830631  translate         1   1  0.49900   0.41580
+              835359     rotate         1   1  0.50100   1.16046
+              835723  translate         1   1  0.52900   0.43991
+              840283     rotate         1   1  0.48000   1.10244
+              840787  translate         1   1  0.48100   0.42320
+              845266     rotate         1   1  0.48000   1.04732
+              845853  translate         1   1  0.50500   0.42743
+              850110     rotate         1   1  0.52900   1.09968
+              850692  translate         1   1  0.45900   0.39238
+              855203     rotate         1   1  0.51700   1.15467
+              855687  translate         1   1  0.54800   0.43005
+              860317     rotate         1   1  0.49600   1.09693
+              860431  translate         1   1  0.49300   0.42403
+              865054     rotate         1   1  0.50200   1.15178
+              865392  translate         1   1  0.49300   0.41809
+              870003     rotate         1   1  0.48600   1.09419
+              870080  translate         1   1  0.50500   0.42227
+              875090  translate         1   1  0.49300   0.41636
+              875247     rotate         1   1  0.48100   1.03948
+              880038  translate         1   1  0.48000   0.39971
+              880203     rotate         1   1  0.52600   1.09146
+              884824  translate         1   1  0.52800   0.42209
+              885524     rotate         1   1  0.50400   1.14603
+              889999  translate         1   1  0.48700   0.41112
+              890782     rotate         1   1  0.48800   1.08873
+              894980  translate         1   1  0.52600   0.43249
+              895966     rotate         1   1  0.51800   1.14316
+              899980  translate         1   1  0.49300   0.42644
+              901075     rotate         1   1  0.50700   1.20032
+              905232  translate         1   1  0.49500   0.42217
+              905918     rotate         1   1  0.49300   1.14031
+              910212  translate         1   1  0.52000   0.43906
+              910996     rotate         1   1  0.48500   1.08329
+              915052  translate         1   1  0.46500   0.40833
+              915963     rotate         1   1  0.53500   1.13745
+              919989  translate         1   1  0.52700   0.43038
+              920980     rotate         1   1  0.48900   1.08058
+              924831  translate         1   1  0.50800   0.43726
+              926081     rotate         1   1  0.51800   1.13461
+              929874  translate         1   1  0.46000   0.40228
+              931241     rotate         1   1  0.48600   1.07788
+              934854  translate         1   1  0.51800   0.41676
+              936339     rotate         1   1  0.48900   1.02399
+              939936  translate         1   1  0.48800   0.40676
+              941163     rotate         1   1  0.52100   1.07519
+              944832  translate         1   1  0.51400   0.41815
+              946225     rotate         1   1  0.49600   1.02143
+              949965  translate         1   1  0.51700   0.43237
+              951246     rotate         1   1  0.52800   1.07250
+              954908  translate         1   1  0.50200   0.43410
+              955991     rotate         1   1  0.51100   1.12612
+              959676  translate         1   1  0.46800   0.40631
+              960854     rotate         1   1  0.48900   1.06982
+              964414  translate         1   1  0.49200   0.39981
+              965900     rotate         1   1  0.50900   1.12331
+              969213  translate         1   1  0.51800   0.41421
+              971169     rotate         1   1  0.46700   1.06714
+              974152  translate         1   1  0.50900   0.42166
+              976283     rotate         1   1  0.48800   1.01378
+              979292  translate         1   1  0.46300   0.39046
+              981249     rotate         1   1  0.53500   1.06447
+              984150  translate         1   1  0.52400   0.40920
+              986191     rotate         1   1  0.50500   1.11770
+              989315  translate         1   1  0.48300   0.39529
+              991035     rotate         1   1  0.49300   1.06181
+              994353  translate         1   1  0.52100   0.41189
+              996002     rotate         1   1  0.52000   1.11490
+              999245  translate         1   1  0.48900   0.40283
+             1000950     rotate         1   1  0.47400   1.05916
+             1004174  translate         1   1  0.51600   0.41572
+             1006209     rotate         1   1  0.52000   1.11212
+             1008975  translate         1   1  0.50900   0.42320
+             1011149     rotate         1   1  0.50900   1.16772
+             1013954  translate         1   1  0.48500   0.41051
+             1016389     rotate         1   1  0.45600   1.10934
+             1018997  translate         1   1  0.51500   0.42282
+             1021341     rotate         1   1  0.49900   1.05387
+             1023735  translate         1   1  0.47200   0.39914
+             1026414     rotate         1   1  0.51300   1.10656
+             1028898  translate         1   1  0.52600   0.41990
+             1031371     rotate         1   1  0.51800   1.16189
+             1033991  translate         1   1  0.48600   0.40814
+             1036339     rotate         1   1  0.49300   1.10380
+             1038895  translate         1   1  0.46000   0.37549
+             1041406     rotate         1   1  0.45800   1.04861
+             1043899  translate         1   1  0.52300   0.39276
+             1046419     rotate         1   1  0.50200   1.10104
+             1048955  translate         1   1  0.51500   0.40455
+             1051308     rotate         1   1  0.51100   1.15609
+             1054098  translate         1   1  0.52400   0.42396
+             1056334     rotate         1   1  0.48000   1.09828
+             1058843  translate         1   1  0.47200   0.40022
+             1061476     rotate         1   1  0.50500   1.15320
+             1063797  translate         1   1  0.48500   0.38822
+             1066414     rotate         1   1  0.50000   1.21086
+             1068771  translate         1   1  0.51300   0.39831
+             1071349     rotate         1   1  0.45500   1.15032
+             1073856  translate         1   1  0.51300   0.40867
+             1076393     rotate         1   1  0.47200   1.09280
+             1078620  translate         1   1  0.49000   0.40049
+             1081039     rotate         1   1  0.47300   1.03816
+             1083705  translate         1   1  0.47500   0.38047
+             1085852     rotate         1   1  0.49200   0.98625
+             1088663  translate         1   1  0.51400   0.39112
+             1090635     rotate         1   1  0.51700   1.03556
+             1093404  translate         1   1  0.49000   0.38330
+             1095748     rotate         1   1  0.49900   0.98379
+             1098419  translate         1   1  0.53100   0.40706
+             1100451     rotate         1   1  0.49000   0.93460
+             1103296  translate         1   1  0.52500   0.42742
+             1105726     rotate         1   1  0.52600   0.98133
+             1108466  translate         1   1  0.48000   0.41032
+             1110633     rotate         1   1  0.54500   1.03039
+             1113577  translate         1   1  0.48900   0.40129
+             1115779     rotate         1   1  0.50000   1.08191
+             1118493  translate         1   1  0.48400   0.38845
+             1120784     rotate         1   1  0.48600   1.02782
+             1123569  translate         1   1  0.49800   0.38690
+             1125777     rotate         1   1  0.52300   1.07921
+             1128568  translate         1   1  0.54400   0.42094
+             1130913     rotate         1   1  0.48900   1.02525
+             1133597  translate         1   1  0.50600   0.42600
+             1136050     rotate         1   1  0.49100   0.97399
+             1138725  translate         1   1  0.48800   0.41577
+             1141265     rotate         1   1  0.53400   1.02268
+             1143693  translate         1   1  0.49700   0.41328
+             1146373     rotate         1   1  0.53100   1.07382
+             1148755  translate         1   1  0.48900   0.40418
+             1151545     rotate         1   1  0.51500   1.12751
+             1153703  translate         1   1  0.49100   0.39691
+             1156171     rotate         1   1  0.50600   1.18388
+             1158882  translate         1   1  0.51700   0.41040
+             1160970     rotate         1   1  0.48100   1.12469
+             1164085  translate         1   1  0.45400   0.37265
+             1166080     rotate         1   1  0.52300   1.18093
+             1169097  translate         1   1  0.53200   0.39650
+             1170831     rotate         1   1  0.45100   1.12188
+             1173943  translate         1   1  0.47800   0.37905
+             1175870     rotate         1   1  0.47000   1.06579
+             1179239  translate         1   1  0.52100   0.39497
+             1181028     rotate         1   1  0.49100   1.01250
+             1183953  translate         1   1  0.51800   0.40919
+             1185964     rotate         1   1  0.53100   1.06312
+             1189013  translate         1   1  0.49900   0.40837
+             1190885     rotate         1   1  0.51900   1.11628
+             1194053  translate         1   1  0.50900   0.41572
+             1195852     rotate         1   1  0.47400   1.06046
+             1198863  translate         1   1  0.51500   0.42819
+             1200941     rotate         1   1  0.52100   1.11349
+             1203590  translate         1   1  0.43000   0.36825
+             1205943     rotate         1   1  0.47900   1.05781
+             1208664  translate         1   1  0.54500   0.40139
+             1210908     rotate         1   1  0.52200   1.11070
+             1213836  translate         1   1  0.49900   0.40059
+             1215759     rotate         1   1  0.50200   1.16624
+             1218899  translate         1   1  0.50400   0.40379
+             1220648     rotate         1   1  0.50300   1.22455
+             1223841  translate         1   1  0.48100   0.38845
+             1225682     rotate         1   1  0.45600   1.16332
+             1228952  translate         1   1  0.53300   0.41408
+             1230707     rotate         1   1  0.44500   1.10516
+             1234011  translate         1   1  0.51700   0.42816
+             1235775     rotate         1   1  0.45400   1.04990
+             1239012  translate         1   1  0.46400   0.39734
+             1240806     rotate         1   1  0.50200   1.10239
+             1244030  translate         1   1  0.52300   0.41561
+             1245666     rotate         1   1  0.49400   1.04727
+             1249132  translate         1   1  0.46800   0.38901
+             1250657     rotate         1   1  0.49900   0.99491
+             1254218  translate         1   1  0.52800   0.41080
+             1255908     rotate         1   1  0.48100   0.94516
+             1259106  translate         1   1  0.48000   0.39437
+             1260688     rotate         1   1  0.52600   0.99242
+             1264125  translate         1   1  0.51000   0.40225
+             1265801     rotate         1   1  0.50400   1.04204
+             1269054  translate         1   1  0.51700   0.41593
+             1270688     rotate         1   1  0.49000   0.98994
+             1274285  translate         1   1  0.49400   0.41094
+             1275600     rotate         1   1  0.53400   1.03944
+             1279538  translate         1   1  0.48600   0.39943
+             1280858     rotate         1   1  0.48500   0.98747
+             1284723  translate         1   1  0.49100   0.39224
+             1285768     rotate         1   1  0.50900   1.03684
+             1289694  translate         1   1  0.50400   0.39538
+             1290819     rotate         1   1  0.49600   0.98500
+             1294736  translate         1   1  0.49100   0.38826
+             1295497     rotate         1   1  0.51700   1.03425
+             1299825  translate         1   1  0.51700   0.40147
+             1300421     rotate         1   1  0.51400   1.08596
+             1304788  translate         1   1  0.50600   0.40628
+             1305629     rotate         1   1  0.47700   1.03166
+             1309695  translate         1   1  0.51100   0.41522
+             1310528     rotate         1   1  0.51300   1.08324
+             1314926  translate         1   1  0.48300   0.40110
+             1315480     rotate         1   1  0.53300   1.13741
+             1319968  translate         1   1  0.50900   0.40832
+             1320468     rotate         1   1  0.47000   1.08054
+             1325010  translate         1   1  0.51200   0.41812
+             1325307     rotate         1   1  0.50700   1.13456
+             1329898  translate         1   1  0.49000   0.40976
+             1330522     rotate         1   1  0.47400   1.07784
+             1334918  translate         1   1  0.48400   0.39665
+             1335373     rotate         1   1  0.47000   1.02394
+             1339964  translate         1   1  0.50100   0.39744
+             1340346     rotate         1   1  0.49300   0.97275
+             1344997  translate         1   1  0.49000   0.38949
+             1345393     rotate         1   1  0.52800   1.02138
+             1350128  translate         1   1  0.52400   0.40819
+             1350356     rotate         1   1  0.51300   1.07245
+             1355066  translate         1   1  0.50600   0.41309
+             1355477     rotate         1   1  0.45400   1.01883
+             1360109  translate         1   1  0.51400   0.42465
+             1360643     rotate         1   1  0.51500   1.06977
+             1365048  translate         1   1  0.49400   0.41956
+             1365549     rotate         1   1  0.49300   1.01628
+             1370109  translate         1   1  0.47200   0.39606
+             1370391     rotate         1   1  0.52500   1.06710
+             1374908  translate         1   1  0.51900   0.41111
+             1375639     rotate         1   1  0.49200   1.01374
+             1379760  translate         1   1  0.50200   0.41276
+             1380724     rotate         1   1  0.49100   0.96306
+             1384472  translate         1   1  0.48300   0.39872
+             1385606     rotate         1   1  0.49100   0.91490
+             1389499  translate         1   1  0.50500   0.40271
+             1390689     rotate         1   1  0.52300   0.96065
+             1394632  translate         1   1  0.49000   0.39466
+             1395596     rotate         1   1  0.53200   1.00868
+             1399500  translate         1   1  0.50600   0.39939
+             1400910     rotate         1   1  0.53400   1.05911
+             1404365  translate         1   1  0.48000   0.38342
+             1405741     rotate         1   1  0.50100   1.11207
+             1409511  translate         1   1  0.49600   0.38035
+             1410867     rotate         1   1  0.50300   1.16767
+             1414553  translate         1   1  0.50800   0.38643
+             1415685     rotate         1   1  0.45300   1.10929
+             1419852  translate         1   1  0.51300   0.39648
+             1421051     rotate         1   1  0.47000   1.05383
+             1424829  translate         1   1  0.48300   0.38300
+             1426083     rotate         1   1  0.48900   1.00113
+             1429570  translate         1   1  0.51400   0.39373
+             1430864     rotate         1   1  0.50800   1.05119
+             1434639  translate         1   1  0.50300   0.39609
+             1436014     rotate         1   1  0.50100   1.10375
+             1439758  translate         1   1  0.50200   0.39767
+             1440652     rotate         1   1  0.51600   1.15894
+             1444636  translate         1   1  0.50500   0.40165
+             1445421     rotate         1   1  0.47700   1.10099
+             1449794  translate         1   1  0.49000   0.39362
+             1450394     rotate         1   1  0.48700   1.04594
+             1454819  translate         1   1  0.48500   0.38181
+             1455380     rotate         1   1  0.47600   0.99364
+             1459868  translate         1   1  0.49300   0.37646
+             1460343     rotate         1   1  0.51100   1.04333
+             1464966  translate         1   1  0.51700   0.38926
+             1465307     rotate         1   1  0.51700   1.09549
+             1469880  translate         1   1  0.51600   0.40172
+             1470369     rotate         1   1  0.45600   1.04072
+             1474698  translate         1   1  0.49900   0.40091
+             1475219     rotate         1   1  0.49800   0.98868
+             1479652  translate         1   1  0.47600   0.38167
+             1480184     rotate         1   1  0.52900   1.03812
+             1484517  translate         1   1  0.54400   0.41526
+             1485073     rotate         1   1  0.50700   1.09002
+             1489529  translate         1   1  0.50400   0.41858
+             1489989     rotate         1   1  0.48800   1.03552
+             1494414  translate         1   1  0.46400   0.38844
+             1495022     rotate         1   1  0.49400   0.98375
+             1499357  translate         1   1  0.49300   0.38300
+             1500069     rotate         1   1  0.54700   1.03293
+             1504386  translate         1   1  0.54900   0.42054
+             1505058     rotate         1   1  0.53300   1.08458
+             1509482  translate         1   1  0.48200   0.40540
+             1510269     rotate         1   1  0.49900   1.03035
+             1514745  translate         1   1  0.48300   0.39162
+             1515231     rotate         1   1  0.50800   1.08187
+             1519615  translate         1   1  0.51100   0.40023
+             1520243     rotate         1   1  0.50100   1.13596
+             1524791  translate         1   1  0.48100   0.38502
+             1525142     rotate         1   1  0.48000   1.07916
+             1529559  translate         1   1  0.52300   0.40273
+             1530364     rotate         1   1  0.49300   1.02520
+             1534135  translate         1   1  0.49200   0.39629
+             1535307     rotate         1   1  0.50200   1.07646
+             1539319  translate         1   1  0.49700   0.39391
+             1540390     rotate         1   1  0.49800   1.02264
+             1544172  translate         1   1  0.49200   0.38761
+             1545318     rotate         1   1  0.51600   1.07377
+             1549178  translate         1   1  0.53900   0.41784
+             1550250     rotate         1   1  0.48800   1.02009
+             1554173  translate         1   1  0.47200   0.39444
+             1555206     rotate         1   1  0.51200   1.07109
+             1559454  translate         1   1  0.49400   0.38971
+             1560392     rotate         1   1  0.49700   1.01753
+             1564480  translate         1   1  0.48300   0.37646
+             1565230     rotate         1   1  0.50000   1.06841
+             1569653  translate         1   1  0.50800   0.38248
+             1570167     rotate         1   1  0.49600   1.01499
+             1574792  translate         1   1  0.49200   0.37636
+             1575160     rotate         1   1  0.50800   1.06574
+             1579764  translate         1   1  0.55400   0.41701
+             1580103     rotate         1   1  0.50000   1.11903
+             1584837  translate         1   1  0.47300   0.39449
+             1585112     rotate         1   1  0.47100   1.06308
+             1589693  translate         1   1  0.50300   0.39686
+             1590242     rotate         1   1  0.51300   1.11623
+             1594634  translate         1   1  0.52400   0.41591
+             1595292     rotate         1   1  0.49700   1.06042
+             1599639  translate         1   1  0.50800   0.42256
+             1600391     rotate         1   1  0.51600   1.11344
+             1604718  translate         1   1  0.43900   0.37101
+             1605428     rotate         1   1  0.48800   1.05777
+             1609823  translate         1   1  0.51800   0.38437
+             1610510     rotate         1   1  0.49500   1.00488
+             1615035  translate         1   1  0.50400   0.38744
+             1615313     rotate         1   1  0.51400   1.05512
+             1620154  translate         1   1  0.51600   0.39984
+             1620426     rotate         1   1  0.49700   1.00237
+             1625035  translate         1   1  0.50200   0.40144
+             1625319     rotate         1   1  0.50800   1.05249
+             1630304     rotate         1   1  0.47100   0.99986
+             1630365  translate         1   1  0.48500   0.38940
+             1634892     rotate         1   1  0.51000   1.04985
+             1635436  translate         1   1  0.52100   0.40575
+             1639921     rotate         1   1  0.49000   0.99736
+             1640485  translate         1   1  0.50700   0.41143
+             1644903     rotate         1   1  0.50800   1.04723
+             1645642  translate         1   1  0.49700   0.40896
+             1649835     rotate         1   1  0.50000   1.09959
+             1650979  translate         1   1  0.48100   0.39342
+             1654741     rotate         1   1  0.49300   1.04461
+             1655792  translate         1   1  0.50700   0.39893
+             1660025     rotate         1   1  0.50500   1.09684
+             1660769  translate         1   1  0.48500   0.38696
+             1664974     rotate         1   1  0.51000   1.15168
+             1665602  translate         1   1  0.47400   0.36684
+             1670196     rotate         1   1  0.48400   1.09410
+             1670500  translate         1   1  0.53700   0.39399
+             1675418     rotate         1   1  0.47000   1.03939
+             1675430  translate         1   1  0.49000   0.38611
+             1680157  translate         1   1  0.52200   0.40310
+             1680465     rotate         1   1  0.47500   0.98743
+             1685111  translate         1   1  0.47300   0.38133
+             1685486     rotate         1   1  0.52500   1.03680
+             1690049  translate         1   1  0.50900   0.38819
+             1690511     rotate         1   1  0.52100   1.08864
+             1695177  translate         1   1  0.49900   0.38742
+             1695361     rotate         1   1  0.48200   1.03420
+             1700189  translate         1   1  0.51600   0.39981
+             1700501     rotate         1   1  0.47100   0.98249
+             1705419  translate         1   1  0.48100   0.38462
+             1705599     rotate         1   1  0.50400   1.03162
+             1710286  translate         1   1  0.48100   0.37000
+             1710885     rotate         1   1  0.53800   1.08320
+             1715578  translate         1   1  0.54900   0.40626
+             1715840     rotate         1   1  0.49600   1.02904
+             1720812  translate         1   1  0.50000   0.40626
+             1720873     rotate         1   1  0.49400   0.97759
+             1725682  translate         1   1  0.47800   0.38839
+             1725748     rotate         1   1  0.52800   1.02647
+             1730621  translate         1   1  0.45600   0.35421
+             1730809     rotate         1   1  0.47800   0.97514
+             1735531  translate         1   1  0.54200   0.38396
+             1735805     rotate         1   1  0.51200   1.02390
+             1740560  translate         1   1  0.53200   0.40854
+             1740701     rotate         1   1  0.49400   0.97271
+             1745662  translate         1   1  0.48400   0.39547
+             1745727     rotate         1   1  0.50100   1.02134
+             1750532     rotate         1   1  0.50400   1.07241
+             1750788  translate         1   1  0.50700   0.40100
+             1755559     rotate         1   1  0.48300   1.01879
+             1755797  translate         1   1  0.50400   0.40421
+             1760677     rotate         1   1  0.52100   1.06973
+             1760947  translate         1   1  0.49500   0.40017
+             1765577     rotate         1   1  0.48400   1.01624
+             1765978  translate         1   1  0.48100   0.38496
+             1770630     rotate         1   1  0.48800   0.96543
+             1771010  translate         1   1  0.49500   0.38111
+             1775587     rotate         1   1  0.53800   1.01370
+             1775730  translate         1   1  0.52900   0.40322
+             1780328     rotate         1   1  0.50400   1.06439
+             1780812  translate         1   1  0.49000   0.39515
+             1785236     rotate         1   1  0.50400   1.11760
+             1785868  translate         1   1  0.51000   0.40305
+             1790139     rotate         1   1  0.49400   1.06172
+             1790688  translate         1   1  0.50000   0.40305
+             1794965     rotate         1   1  0.50000   1.11481
+             1795424  translate         1   1  0.48900   0.39419
+             1799947     rotate         1   1  0.48500   1.05907
+             1800327  translate         1   1  0.47300   0.37290
+             1804673     rotate         1   1  0.48800   1.00612
+             1805487  translate         1   1  0.54300   0.40497
+             1809678     rotate         1   1  0.49000   0.95581
+             1810278  translate         1   1  0.48200   0.39039
+             1814612     rotate         1   1  0.48400   0.90802
+             1815271  translate         1   1  0.51900   0.40523
+             1819537     rotate         1   1  0.55200   0.95342
+             1820231  translate         1   1  0.48000   0.38902
+             1824519     rotate         1   1  0.51000   1.00109
+             1825364  translate         1   1  0.51300   0.39913
+             1829277     rotate         1   1  0.51800   1.05115
+             1830544  translate         1   1  0.46600   0.37199
+             1834433     rotate         1   1  0.53300   1.10370
+             1835475  translate         1   1  0.54000   0.40175
+             1839412     rotate         1   1  0.49600   1.04852
+             1840584  translate         1   1  0.47400   0.38086
+             1844453     rotate         1   1  0.54900   1.10094
+             1845611  translate         1   1  0.49500   0.37705
+             1849532     rotate         1   1  0.48200   1.04590
+             1850578  translate         1   1  0.52300   0.39440
+             1854724     rotate         1   1  0.47300   0.99360
+             1855612  translate         1   1  0.49600   0.39124
+             1859709     rotate         1   1  0.53300   1.04328
+             1860713  translate         1   1  0.49800   0.38968
+             1864721     rotate         1   1  0.50800   1.09545
+             1865755  translate         1   1  0.49000   0.38188
+             1869769     rotate         1   1  0.46100   1.04067
+             1870780  translate         1   1  0.52700   0.40250
+             1874695     rotate         1   1  0.50200   1.09271
+             1875803  translate         1   1  0.47700   0.38399
+             1879814     rotate         1   1  0.49000   1.03807
+             1880641  translate         1   1  0.49700   0.38168
+             1884890     rotate         1   1  0.50000   1.08998
+             1885607  translate         1   1  0.51700   0.39466
+             1889758     rotate         1   1  0.48600   1.03548
+             1890614  translate         1   1  0.49900   0.39387
+             1894801     rotate         1   1  0.50000   1.08725
+             1895383  translate         1   1  0.48800   0.38442
+             1899670     rotate         1   1  0.48100   1.03289
+             1900533  translate         1   1  0.53400   0.41056
+             1904543     rotate         1   1  0.49800   0.98124
+             1905679  translate         1   1  0.47500   0.39003
+             1909512     rotate         1   1  0.48900   0.93218
+             1910594  translate         1   1  0.49700   0.38769
+             1914578     rotate         1   1  0.51600   0.97879
+             1915720  translate         1   1  0.51800   0.40165
+             1919633     rotate         1   1  0.49200   0.92985
+             1920654  translate         1   1  0.50800   0.40807
+             1924806     rotate         1   1  0.54300   0.97634
+             1925878  translate         1   1  0.49300   0.40236
+             1929718     rotate         1   1  0.51300   1.02516
+             1930780  translate         1   1  0.50000   0.40236
+             1934529     rotate         1   1  0.50700   1.07642
+             1935562  translate         1   1  0.51300   0.41282
+             1939903     rotate         1   1  0.47000   1.02260
+             1940352  translate         1   1  0.47800   0.39466
+             1945017     rotate         1   1  0.50500   1.07373
+             1945258  translate         1   1  0.50300   0.39703
+             1950012     rotate         1   1  0.49700   1.02004
+             1950239  translate         1   1  0.50800   0.40338
+             1955092     rotate         1   1  0.52100   1.07104
+             1955130  translate         1   1  0.49700   0.40096
+             1960007     rotate         1   1  0.49600   1.01749
+             1960383  translate         1   1  0.50000   0.40096
+             1965086     rotate         1   1  0.47100   0.96662
+             1965227  translate         1   1  0.50600   0.40577
+             1970301  translate         1   1  0.52300   0.42444
+             1970413     rotate         1   1  0.49400   0.91829
+             1975146  translate         1   1  0.48200   0.40916
+             1975301     rotate         1   1  0.53200   0.96420
+             1980129  translate         1   1  0.51100   0.41816
+             1980301     rotate         1   1  0.49800   0.91599
+             1985048  translate         1   1  0.48500   0.40561
+             1985252     rotate         1   1  0.51300   0.96179
+             1989991  translate         1   1  0.50700   0.41129
+             1990276     rotate         1   1  0.50900   1.00988
+             1994848     rotate         1   1  0.52300   1.06037
+             1995351  translate         1   1  0.49300   0.40553
+             1999864     rotate         1   1  0.48900   1.00736
+********************************************************************************
+
+Energy of final configuration
+********************************************************************************
+
+ Energy components for box 1     kJ/mol-Extensive       Relative_Error
+ ---------------------------------------------------------------------
+ Total system energy                 21615387.992            0.397E-14
+ Intra molecular energy              21675967.579            0.365E-13
+   Bond energy                              0.000            0.000E+00
+   Bond angle energy                     3828.554            0.137E-14
+   Dihedral angle energy                    0.000            0.000E+00
+   Improper angle energy                    0.000            0.000E+00
+   Intra molecule vdw                21672139.025            0.000E+00
+   Intra molecule q                         0.000            0.000E+00
+ Inter molecular energy                -60579.587           -0.495E-13
+   Inter molecule vdw                  -54740.900           -0.356E-13
+   Long range correction                -5838.688           -0.000E+00
+   Inter molecule q                         0.000            0.000E+00
+ ---------------------------------------------------------------------
+
+********************************************************************************
+
+
+Writing information for box  1
+********************************************************************************
+
+   ---------------------------------------------------------
+   Writing information for species  1
+
+                Move      Trials     Success   % Success
+           Translate      399932      199364       49.85
+              Rotate      400023      200323       50.08
+              Insert      401125       11186        2.79
+              Delete      398984        7727        1.94
+   ---------------------------------------------------------
+
+
+   ---------------------------------------------------------
+   Writing information for species  2
+
+                Move      Trials     Success   % Success
+   ---------------------------------------------------------
+
+********************************************************************************
+
+Writing information about fragments
+********************************************************************************
+
+   ---------------------------------------------------------
+   Writing information for species  1
+     #_Frags_Regrown      Trials     Success   % Success
+                   1      399936       90255       22.57
+   ---------------------------------------------------------
+********************************************************************************
+
+ Writing information about subroutine times
+********************************************************************************
+ Translation time =           17.730652 mins.
+ Rotation time =              18.441495 mins.
+ Insertion time =              3.036191 hrs.
+ Deletion time =               2.934661 hrs.
+ Regrowth time =               0.299524 hrs.
+********************************************************************************
+
+********************************************************************************
+************************ Cassandra simulation complete *************************
+********************************************************************************
+
+ Program execution time
+********************************************************************************
+         0      Years
+         0     Months
+         2       Days
+        20      Hours
+        50    Minutes
+        31    Seconds
+       384         ms
+********************************************************************************
