@@ -1,0 +1,108 @@
+# Run_Name
+propane_SBA15_32.25.out
+!--------------
+
+# Sim_Type
+gcmc
+!---------------
+
+# Nbr_Species
+2
+!----------------
+
+# VDW_Style
+lj cut_tail 12.0
+!---------------- 
+
+# Seed_Info
+867323178 599978543
+!-------------------
+
+# Rcutoff_Low
+0.5
+!----------------
+
+# Pair_Energy
+true
+!-----------
+
+
+# Molecule_Files
+propane.mcf 4000
+t.mcf 1
+!------------------------
+
+# Box_Info
+1
+orthogonal
+101.20 96.47 101.34
+!-------------------------
+
+# Temperature_Info
+273.46
+!------------------
+
+# Chemical_Potential_Info
+-32.25
+!------------------------
+
+# Move_Probability_Info
+
+# Prob_Translation
+0.2
+2.0  0.0    
+
+# Prob_Rotation
+0.2
+180.0  0.0  
+
+# Prob_Regrowth
+0.2
+1.0  0.0    
+
+# Prob_Insertion
+0.2
+cbmc none
+
+# Prob_Deletion
+0.2
+
+# Done_Probability_Info
+!----------------------
+
+# Start_Type
+add_to_config 0 1 t.xyz 10 0
+!------------------
+
+# Run_Type
+equilibration 1000 50  
+!------------------
+
+# Simulation_Length_Info
+units        steps
+prop_freq    400
+coord_freq   40000
+run          2000000
+!----------------------------
+
+# Property_Info 1 
+energy_total
+nmols
+pressure
+density
+volume
+!----------------
+
+# Fragment_Files
+species1/frag1/frag1.dat  1
+!---------------------------------------------------------one line per fragment
+
+# CBMC_Info
+kappa_ins 12
+rcut_cbmc 6.5
+kappa_rot 0
+kappa_dih 12 
+!------------
+
+END
+
